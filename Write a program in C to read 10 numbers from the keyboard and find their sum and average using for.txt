@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float total,average,num,x;
+    num=1;
+    for (num=1;num<=10;num++) {
+        printf ("Enter the number:");
+        scanf ("%f",&x);
+        total=total+x;
+    }
+average = total / 10;
+printf ("Sum of the given numbers is: %f\n",total);
+printf ("Average of the given numbers is: %f",average);
+
+    return 0;
+}
