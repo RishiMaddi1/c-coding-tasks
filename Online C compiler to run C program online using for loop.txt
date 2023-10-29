@@ -1,0 +1,12 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    float n,m;
+    m=0;
+    for (n=0;n<=10;n++) {
+        m=m+n;
+    }
+    printf ("%f",m);
+    return 0;
+}
