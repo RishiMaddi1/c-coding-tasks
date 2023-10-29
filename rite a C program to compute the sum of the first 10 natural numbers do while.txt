@@ -1,0 +1,20 @@
+/ Write a C program to compute the sum of the first 10 natural numbers:
+// using do while
+#include <stdio.h>
+
+int main() {
+  float n,m;
+  n=0;
+  m=0;
+  do {
+      m=m+n;
+      n++;
+  }while (n<=10);
+  
+  
+  
+  
+  printf ("%f",m);
+  
+    return 0;
+}
