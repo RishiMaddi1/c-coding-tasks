@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float x,n,p;
+    n=1;
+    printf ("Enter the integer:");
+    scanf ("%f",&x);
+    printf ("The multiplication table for the given integer %.2f is :\n",x);
+    for (n=1;n<=12;n++) {
+        p=n*x;
+        printf ("%.2f * %.2f = %.2f\n",x,n,p);
+        
+
+    }
+    
+    
+
+    return 0;
+}
