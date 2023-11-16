@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+    int c;
+    scanf ("%d",&c);
+  int array1[c];
+  int array2[c];
+  int array[2*c];
+  
+  int i,n,r,v,g;
+for (i=0;i<c;i++){
+    scanf ("%d",&array1[i]);
+} 
+for (i=0;i<c;i++){
+    scanf ("%d",&array2[i]);
+} 
+for (i=0;i<c;i++){
+    n=array1[i];
+    array[i]=n;
+} 
+
+for (i=0;i<c;i++){
+    r=i;
+    n=array2[i];
+    i=i+5;
+    array[i]=n;
+    i=r;
+}
+for (v=(2*c)-1; v>=0; v--) {
+    for(i = 0; i < v ; i++) {
+        if (array[i]>array[i+1]) {
+            g=array[i+1];
+            array[i+1]=array[i];
+            array[i]=g;
+        }
+    }
+}
+
+for(i = (2*c)-1; i>=0 ; i--) {
+        printf ("%d ",array[i]);
+    }
+
+
+    return 0;
+}
