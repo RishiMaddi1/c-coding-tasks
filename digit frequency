@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
 int main() {
+
     int l,i,n0=0,n1=0,n2=0,n3=0,n4=0,n5=0,n6=0,n7=0,n8=0,n9=0;
-    char n[100];
+    char n[1000];
     scanf("%s",n);
     l=strlen(n);
     char array[l];
@@ -47,8 +51,9 @@ for (i = 0; i < l; i++) {
         }
     }
 printf ("%d %d %d %d %d %d %d %d %d %d",n0,n1,n2,n3,n4,n5,n6,n7,n8,n9);
-
-   return 0;
+    
+    return 0;
 }
+
 
 
